@@ -1,0 +1,58 @@
+<div class="filters-container">
+  
+
+    <button (click)="myFunction('all')">All</button>
+    <button (click)="myFunction('analyst')">analyst</button>
+    <button (click)="myFunction('diplomat')">diplomat</button>
+    <button (click)="myFunction('sentinel')">sentinel</button>
+    <button (click)="myFunction('explorers')">explorers</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button><a routerLink="Home" >Buttonn</a></button>
+
+
+<div class="movie-content">
+    <!-- <app-filetrs (choosenWord)="konvertisGaxsna($Event)"></app-filetrs> -->
+
+    <!-- SALOME DA NINO ESS ARIS RAGACA ERORI ANU $EVENT VER POULOBS AI SHEAMOWMET -->
+
+  <div class="movies-container">
+    <ng-container *ngFor="let mbti of mbtis">
+      <div
+        class="flip-card"
+        *ngIf="filterWord === 'all' || filterWord === mbti.type" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img [src]="mbti.imgSrc" alt="Avatar" />
+          </div>
+          <div class="flip-card-back">
+            <h3>{{ mbti.name }}</h3>
+            <p>{{ mbti.information }}</p>
+            <p>{{ mbti.type }}</p>
+            <p>{{ mbti.p }}</p>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,26 @@
+.com{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.ImgS{
+    width: 200px;
+   gap: 20px;
+   display: grid;
+   justify-content: 1fr 1fr 1fr;
+  
+   
+}
+
+.d{
+    width: 200px;
+    gap: 12px;
+    display: flex;
+    
+    align-items: center;
+   
+
+}

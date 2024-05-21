@@ -1,0 +1,38 @@
+<!-- 
+
+<div class="movie-content">
+    <div class="movies-container">
+      <ng-container *ngFor="let book of book">
+        <div class="flip-card" *ngIf="filterWord === 'all' || filterWord === book.type">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img [src]="book.img" alt="Avatar" />
+            </div>
+            <div class="flip-card-back">
+              <h3>{{book.name}}</h3>
+              <p>{{book.information}}</p>
+            </div>
+          </div>
+        </div> 
+      </ng-container>
+    </div>
+  </div>
+   -->
+
+   <div class="movie-content">
+    <div class="movies-container">
+      <ng-container *ngFor="let book of books">
+        <div class="flip-card" >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img [src]="book.img" alt="Avatar" />
+            </div>
+            <div class="flip-card-back">
+              <h3>{{book.name}}</h3>
+              <p>{{book.information}}</p>
+            </div>
+          </div>
+        </div> 
+      </ng-container>
+    </div>
+  </div>
